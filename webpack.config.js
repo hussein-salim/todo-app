@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js', // Name of the bundled JavaScript file
     path: path.resolve(__dirname, 'dist'), // Output directory for the bundle
-    publicPath: '/', // Change this to '/' for development
+    publicPath: './', // Use relative paths for GitHub Pages
   },
   devServer: {
     static: {
