@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+        <title>Todo List</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="app-header">
+                <h1><i class="fas fa-check-double"></i> Todo List</h1>
+            </header>
+    
+            <main class="app-content">
+                <section class="inbox-section">
+                    <div class="section-header">
+                        <h2>Inbox</h2>
+                        <button id="add-task-btn">+ Add Task</button>
+                    </div>
+                    <ul id="inbox-list" class="todo-list">
+                        </ul>
+                </section>
+    
+                <section class="today-section">
+                    <div class="section-header">
+                        <h2>Today</h2>
+                    </div>
+                    <ul id="today-list" class="todo-list">
+                        </ul>
+                </section>
+    
+                <section class="this-week-section">
+                    <div class="section-header">
+                        <h2>This week</h2>
+                    </div>
+                    <ul id="this-week-list" class="todo-list">
+                        </ul>
+                </section>
+    
+                <section class="projects-section">
+                    <div class="section-header">
+                        <h2>Projects</h2>
+                        <button id="add-project-btn">+ Add Project</button>
+                    </div>
+                    <ul id="project-list">
+                        </ul>
+                </section>
+            </main>
+    
+            <footer class="app-footer">
+                <p>&copy; 2025 Hussein-Salim</p>
+            </footer>
+    
+            <div id="todo-details-modal" class="modal" style="display: none;">
+                </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

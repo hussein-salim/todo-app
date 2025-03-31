@@ -1,0 +1,175 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #121212; /* Very dark gray/black background */
+    color: #eee; /* Light gray text */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter dark gray for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* More prominent shadow */
+    overflow: hidden;
+  }
+  
+  .app-header {
+    background-color: #000; /* Black header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333; /* Dark gray border */
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  
+  .app-header i {
+    margin-right: 0.5em;
+  }
+  
+  .app-content {
+    padding: 20px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333; /* Dark gray border */
+  }
+  
+  .section-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ddd; /* Light gray heading text */
+    font-weight: 400;
+  }
+  
+  .section-header button {
+    background-color: #333; /* Dark gray button */
+    color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-header button:hover {
+    background-color: #555; /* Slightly lighter dark gray on hover */
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #2a2a2a; /* Very dark gray border */
+  }
+  
+  .todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .app-footer {
+    background-color: #000; /* Black footer */
+    color: #888; /* Medium gray for footer text */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+  }
+  
+  .projects-section .section-header button {
+    background-color: #555; /* Darker gray for Add Project */
+  }
+  
+  .projects-section .section-header button:hover {
+    background-color: #777;
+  }
+  
+  #project-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #project-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  
+  .inbox-section .todo-list,
+.today-section .todo-list,
+.this-week-section .todo-list {
+    margin-top: 10px; /* Add some space above the list */
+}
+
+.inbox-section .todo-list li,
+.today-section .todo-list li,
+.this-week-section .todo-list li {
+    padding: 12px 15px; /* Slightly more padding inside list items */
+    display: flex; /* Prepare for aligning elements within the todo item */
+    align-items: center; /* Vertically align items in the todo */
+}
+
+.inbox-section .todo-list li:last-child,
+.today-section .todo-list li:last-child,
+.this-week-section .todo-list li:last-child {
+    border-bottom: none; /* Remove bottom border from the last item */
+}
+.todo-item-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Take full width of the list item */
+}
+
+.todo-checkbox {
+    margin-right: 10px;
+}
+
+.todo-title {
+    flex-grow: 1; /* Allow the title to take up available space */
+    word-break: break-word; /* Prevent long titles from breaking the layout */
+}
+
+.todo-title.completed {
+    text-decoration: line-through;
+    color: #888; /* Lighter color for completed tasks */
+}
+
+.todo-duedate {
+    margin-left: 10px;
+    font-size: 0.85em;
+    color: #777;
+}
+
+.todo-actions {
+    margin-left: 15px;
+}
+
+.todo-actions button {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 5px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-actions button:hover {
+    background-color: #333;
+    color: #fff;
+}/* Removed empty ruleset for #project-list li:last-child */
